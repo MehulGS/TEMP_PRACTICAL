@@ -14,7 +14,7 @@ Follow these steps to set up the project:
 
 1. **Clone the Repository**
 ```bash
-git clone https://github.com/MehulGS/TMP_PracticalTest.git
+git clone https://github.com/MehulGS/TEMP_PRACTICAL.git
 cd TMP_PracticalTest
 ```
 
@@ -23,11 +23,6 @@ cd TMP_PracticalTest
 npm install
 ```
 
-3. **Create .env File**
-Create a `.env` file in the root directory and add the following variable:
-```
-REACT_APP_API_URL=https://dummyjson.com
-```
 
 4. **Start the React Application**
 ```bash
