@@ -56,13 +56,3 @@ npm run auth-server
   ├── App.js
   ├── index.js
 ```
-
-
-
-## Final Instructions
-Once the application is running successfully:
-- Test each feature thoroughly.
-- Ensure proper error handling and responsiveness across devices.
-
-Good luck with your interview task!
-
