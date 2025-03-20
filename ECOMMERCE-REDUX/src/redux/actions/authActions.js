@@ -38,6 +38,11 @@ export const login = (email, password, navigate, showAlert) => async (dispatch) 
 
 
 export const register = (username, password, email, navigate, showAlert) => async (dispatch) => {
+  if (!username || !email || !password) {
+    showAlert('All fields are required.', 'error');
+    return;
+  }
+
   try {
     const response = await axios.post('http://localhost:5000/users', {
       username,
@@ -53,6 +58,7 @@ export const register = (username, password, email, navigate, showAlert) => asyn
     dispatch({ type: 'REGISTER_FAILURE', payload: error.message });
   }
 };
+
 
 export const checkAuth = () => (dispatch) => {
   const token = localStorage.getItem('token');
